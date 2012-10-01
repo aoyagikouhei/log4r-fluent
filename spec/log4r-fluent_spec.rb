@@ -10,4 +10,3 @@ describe Log4r::Fluent do
     obj.tag.should == "hi"
   end
 end
-
