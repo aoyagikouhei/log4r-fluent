@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = Log4r::Fluent::VERSION
   gem.authors       = ["aoyagikouhei"]
   gem.email         = ["aoyagi.kouhei@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Log4R Outputter for fluent}
+  gem.summary       = %q{Log4R Outputter for fluent}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
