@@ -10,10 +10,12 @@ Gem::Specification.new do |gem|
   gem.email         = ["aoyagi.kouhei@gmail.com"]
   gem.description   = %q{Log4R Outputter for fluent}
   gem.summary       = %q{Log4R Outputter for fluent}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/aoyagikouhei/log4r-fluent"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
+  gem.add_dependency(%q<log4r>)
+  gem.add_dependency(%q<fluent-logger>)
 end
