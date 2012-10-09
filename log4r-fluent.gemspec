@@ -1,11 +1,11 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'log4r-fluent/version'
+require 'log4r/fluent_outputter'
 
 Gem::Specification.new do |gem|
   gem.name          = "log4r-fluent"
-  gem.version       = Log4r::Fluent::VERSION
+  gem.version       = Log4r::FluentOutputter::VERSION
   gem.authors       = ["aoyagikouhei"]
   gem.email         = ["aoyagi.kouhei@gmail.com"]
   gem.description   = %q{Log4R Outputter for fluent}

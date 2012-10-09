@@ -1,5 +1,5 @@
 require 'spec_helper'
-describe Log4r::Fluent do
+describe Log4r::FluentOutputter do
   it "initialize" do
     obj = Log4r::FluentOutputter.new("name")
     obj.tag.should == "test"
@@ -7,6 +7,11 @@ describe Log4r::Fluent do
   
   it "initialize with tag" do
     obj = Log4r::FluentOutputter.new("name", {tag: 'hi'})
+    obj.tag.should == "hi"
+  end
+  
+  it "initialize with tag str key" do
+    obj = Log4r::FluentOutputter.new("name", {"tag" => 'hi'})
     obj.tag.should == "hi"
   end
   
